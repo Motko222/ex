@@ -1,0 +1,2 @@
+# ex
+simple script launcher
