@@ -8,5 +8,7 @@ mkdir config
 mkdir logs
 cd scripts
 git clone https://github.com/Motko222/ex
+cd ex
 chmod +x *.sh
-export PATH="~/script/ex/ex.sh:$PATH"
+echo alias ex=\"bash ~/scripts/ex/ex.sh\" >> ~/.bashrc
+source ~/.bashrc
