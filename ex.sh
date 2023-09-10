@@ -32,4 +32,11 @@ if [ -z $2 ]
     action=$2
 fi
 
-bash ~/scripts/$repo/$action.sh
+case $action in
+"README.md"|"readme" )
+  cat ~/scripts/$repo/$action.sh
+;;
+*)
+  bash ~/scripts/$repo/$action.sh
+;;
+esac
