@@ -34,7 +34,7 @@ fi
 
 case $action in
 "README.md"|"readme" )
-  cat ~/scripts/$repo/$action.sh
+  cat ~/scripts/$repo/$action
 ;;
 *)
   bash ~/scripts/$repo/$action.sh
