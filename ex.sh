@@ -3,13 +3,13 @@
 if [ -z $1 ]
   then
     echo "------------------------"
-    ls ~/config | sed 's/.sh//g' | nl
+    ls ~/scripts | nl
     echo "------------------------"
     read -p "Repo? " repo
 
     if [[ $repo == ?(-)+([0-9]) ]]
       then
-        repo=$(ls ~/config | sed 's/.sh//g' | head -$repo | tail -1 )
+        repo=$(ls ~/scripts | head -$repo | tail -1 )
     fi
 
   else
