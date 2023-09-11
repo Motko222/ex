@@ -18,6 +18,7 @@ for i in $repo
 do
   echo "Updating $i..."
   cd ~/scripts/$i
+  git stash push --include-untracked
   git pull
 done  
 
