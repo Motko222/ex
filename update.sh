@@ -16,6 +16,7 @@ fi
 
 for i in $repo
 do
+  echo "Updating $i..."
   cd ~/scripts/$i
   git pull
 done  
