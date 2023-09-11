@@ -3,6 +3,8 @@
 echo "------------------------"
 ls ~/scripts | nl
 echo "------------------------"
+echo "  all  update all"
+echo "------------------------"
 read -p "Repo? " repo
 
 if [[ $repo == ?(-)+([0-9]) ]]
@@ -16,6 +18,7 @@ fi
 
 for i in $repo
 do
+  echo "------------------------"
   echo "Updating $i..."
   cd ~/scripts/$i
   git stash push --include-untracked
