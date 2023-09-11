@@ -3,7 +3,7 @@
 echo "------------------------"
 ls ~/scripts | nl
 echo "------------------------"
-echo "  all  update all"
+echo "   all  update all"
 echo "------------------------"
 read -p "Repo? " repo
 
