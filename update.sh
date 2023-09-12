@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#echo "------------------------"
+echo "------------------------"
 ls ~/scripts | nl
 #echo "------------------------"
 echo "   all  update all"
