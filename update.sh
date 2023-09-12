@@ -18,10 +18,8 @@ fi
 
 for i in $repo
 do
-  echo "------------------------"
-  noupdate=
-  source ~/config/$i.sh
-  if [ -z $noupdate ]
+  echo "------------------------" 
+  if [ -d ~/scripts/$1/.git ]
     then
       echo "Updating $i..."
       cd ~/scripts/$i
