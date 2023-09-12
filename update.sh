@@ -21,7 +21,7 @@ do
   echo "------------------------"
   noupdate=
   source ~/config/$i.sh
-  if [ -z $noupdate]
+  if [ -z $noupdate ]
     then
       echo "Updating $i..."
       cd ~/scripts/$i
