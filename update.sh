@@ -19,10 +19,17 @@ fi
 for i in $repo
 do
   echo "------------------------"
-  echo "Updating $i..."
-  cd ~/scripts/$i
-  git stash push --include-untracked
-  git pull
+  noupdate=
+  source ~/config/$i.sh
+  if [ -z $noupdate]
+    then
+      echo "Updating $i..."
+      cd ~/scripts/$i
+      git stash push --include-untracked
+      git pull
+    else
+      echo "Ignoring $i..."
+  fi
 done  
 
 chmod +x -R ~/scripts
