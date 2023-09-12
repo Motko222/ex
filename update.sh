@@ -19,7 +19,7 @@ fi
 for i in $repo
 do
   echo "------------------------" 
-  if [ -d ~/scripts/$1/.git ]
+  if [ -d ~/scripts/$i/.git ]
     then
       echo "Updating $i..."
       cd ~/scripts/$i
