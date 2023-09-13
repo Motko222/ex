@@ -19,13 +19,13 @@ fi
 if [ -z $2 ]
   then
     echo "------------------------"
-    ls ~/scripts/$repo | sed 's/.sh//g' | sed 's/.git//g' | nl
+    ls ~/scripts/$repo/*.sh | sed 's/.sh//g' | sed 's/.git//g' | nl
     echo "------------------------"
     read -p "Action? " action
     echo "------------------------"
     if [[ $action == ?(-)+([0-9]) ]]
       then
-        action=$(ls ~/scripts/$repo | sed 's/.sh//g' | sed 's/.git//g' | head -$action | tail -1 )
+        action=$(ls ~/scripts/$repo/*.sh | sed 's/.sh//g' | sed 's/.git//g' | head -$action | tail -1 )
     fi
 
   else
