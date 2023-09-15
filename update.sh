@@ -25,9 +25,8 @@ do
       cd ~/scripts/$i
       git stash push --include-untracked
       git pull
+      chmod +x *.sh
     else
       echo "Ignoring $i..."
   fi
-done  
-
-chmod +x -R ~/scripts
+done 
