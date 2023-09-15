@@ -19,13 +19,14 @@ fi
 if [ -z $2 ]
   then
     echo "------------------------"
-    ls ~/scripts/$repo | sed 's/.sh//g' | sed 's/.git//g' | nl
+    ls ~/scripts/$repo | grep .sh | sed 's/.sh//g' | nl
+    echo "     R  readme"
     echo "------------------------"
     read -p "Action? " action
     echo "------------------------"
     if [[ $action == ?(-)+([0-9]) ]]
       then
-        action=$(ls ~/scripts/$repo | sed 's/.sh//g' | sed 's/.git//g' | head -$action | tail -1 )
+        action=$(ls ~/scripts/$repo | grep .sh | head -$action | tail -1 )
     fi
 
   else
@@ -33,10 +34,10 @@ if [ -z $2 ]
 fi
 
 case $action in
-"README.md"|"readme" )
-  cat ~/scripts/$repo/$action
+r|R)
+  cat ~/scripts/$repo/README.md
 ;;
 *)
-  bash ~/scripts/$repo/$action.sh
+  bash ~/scripts/$repo/$action
 ;;
 esac
