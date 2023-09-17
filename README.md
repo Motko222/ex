@@ -3,7 +3,7 @@ simple script launcher
 
 **INSTALL**
 cd ~;
-mkdir scripts config logs;
+mkdir scripts logs;
 cd scripts;
 git clone https://github.com/Motko222/ex;
 chmod +x -R ~/scripts;
