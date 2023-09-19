@@ -30,7 +30,7 @@ if [ -z $2 ]
     fi
 
   else
-    action=$2
+    action=$2.sh
 fi
 
 case $action in
