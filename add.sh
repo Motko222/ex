@@ -3,6 +3,6 @@
 read -p "Repo? " repo
 echo "------------------------"
 
-cd scripts;
+cd ~/scripts;
 git clone https://github.com/Motko222/$repo;
 chmod +x ~/scripts/$repo/*.sh;
