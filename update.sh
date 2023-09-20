@@ -11,9 +11,9 @@ if [[ $repo == ?(-)+([0-9]) ]]
     repo=$(ls ~/scripts | head -$repo | tail -1 )
 fi
 
-if [[ $repo == "all" ]]
-  then repo=$(ls ~/scripts)
-fi
+case $repo in
+  a|A) repo=$(ls ~/scripts) ;;
+esac
 
 for i in $repo
 do
