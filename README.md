@@ -1,18 +1,17 @@
-# ex
-simple script launcher
+# ex - simple script launcher
 
-**INSTALL**
-cd ~;
-mkdir scripts logs;
-cd scripts;
-git clone https://github.com/Motko222/ex;
-chmod +x ~/scripts/ex/*.sh;
-echo alias ex=\"bash ~/scripts/ex/ex.sh\" >> ~/.bashrc;
-source ~/.bashrc;
+## INSTALL
+wget -N https://raw.githubusercontent.com/Motko222/ex/main/install.sh && bash ./install.sh && alias ex="bash ~/scripts/ex/ex.sh"
 
-**USAGE**
+## USAGE
 ex
 -or-
 ex repo
 -or-
 ex repo script
+
+## ADD REPO
+ex
+choose ex
+choose add
+insert repo name
