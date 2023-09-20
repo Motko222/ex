@@ -19,14 +19,14 @@ fi
 if [ -z $2 ]
   then
     echo "------------------------"
-    ls ~/scripts/$repo | grep .sh | sed 's/.sh//g' | nl
+    ls ~/scripts/$repo | grep .sh | grep -v ex.sh | sed 's/.sh//g' | nl
     echo "     R  readme"
     echo "------------------------"
     read -p "Action? " action
     echo "------------------------"
     if [[ $action == ?(-)+([0-9]) ]]
       then
-        action=$(ls ~/scripts/$repo | grep .sh | head -$action | tail -1 )
+        action=$(ls ~/scripts/$repo | grep .sh | grep -v ex.sh | head -$action | tail -1 )
     fi
 
   else
