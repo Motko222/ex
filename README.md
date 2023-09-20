@@ -1,16 +1,16 @@
 # ex - simple script launcher
 
-## INSTALL
+### INSTALL
 wget -N https://raw.githubusercontent.com/Motko222/ex/main/install.sh && bash ./install.sh && alias ex="bash ~/scripts/ex/ex.sh"
 
-## USAGE
+### USAGE
 ex
 -or-
 ex repo
 -or-
 ex repo script
 
-## ADD REPO
+### ADD REPO
 ex
 choose ex
 choose add
