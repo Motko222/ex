@@ -2,12 +2,12 @@
 
 cd ~
 
-if [ ! -d ~/scripts ] 
+if [ ! -d ~/scripts ]
   then
     mkdir scripts
 fi
 
-if [ ! -d ~/logs ] 
+if [ ! -d ~/logs ]
   then
     mkdir logs
 fi
@@ -18,4 +18,4 @@ chmod +x ~/scripts/ex/*.sh
 echo alias ex="bash ~/scripts/ex/ex.sh" >> ~/.bashrc
 source ~/.bashrc
 echo "------------------------"
-echo "Simple script launcher installed. Run 'ex' to open client." 
+echo "Simple script launcher installed. Run 'ex' to open client."
