@@ -16,7 +16,6 @@ cd scripts
 git clone https://github.com/Motko222/ex
 chmod +x ~/scripts/ex/*.sh
 echo alias ex=\"bash ~/scripts/ex/ex.sh\" >> ~/.bashrc
-shopt -s expand_aliases
-alias ex="bash ~/scripts/ex/ex.sh"
+source ~/.bashrc
 echo "------------------------"
 echo "Simple script launcher installed. Run 'ex' to open client."
