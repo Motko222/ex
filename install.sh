@@ -1,6 +1,8 @@
 #!/bin/bash
 
-sudo apt-get install git
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install git jq curl
 
 cd ~
 
