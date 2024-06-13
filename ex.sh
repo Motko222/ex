@@ -28,7 +28,7 @@ if [ -z $2 ]
       then
         action=$(ls ~/scripts/$repo | grep .sh | grep -v ex.sh | head -$action | tail -1 )
       else
-      action=$2.sh
+      action=action.sh
     fi
 
   else
