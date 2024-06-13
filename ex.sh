@@ -27,6 +27,8 @@ if [ -z $2 ]
     if [[ $action == ?(-)+([0-9]) ]]
       then
         action=$(ls ~/scripts/$repo | grep .sh | grep -v ex.sh | head -$action | tail -1 )
+      else
+      action=$2.sh
     fi
 
   else
