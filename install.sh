@@ -2,7 +2,7 @@
 
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install git jq curl
+sudo apt-get install git jq curl mc -y
 
 cd ~
 
